@@ -1,7 +1,7 @@
 {
-  "name": "@mintpond/hasher-kawpow",
+  "name": "@zachchan105/hasher-meowpow",
   "version": "1.0.0",
-  "description": "KawPOW algorithm hashing and verification functions for NodeJS.",
+  "description": "MeowPOW algorithm hashing and verification functions for NodeJS.",
   "main": "index.js",
   "author": "JCThePants",
   "license": "MIT",
@@ -15,13 +15,13 @@
   "scripts": {
     "test": "node test"
   },
-  "homepage": "https://github.com/MintPond/hasher-kawpow",
+  "homepage": "https://github.com/zachchan105/hasher-meowpow",
   "bugs": {
-    "url": "https://github.com/MintPond/hasher-kawpow/issues"
+    "url": "https://github.com/zachchan105/hasher-meowpow/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MintPond/hasher-kawpow.git"
+    "url": "https://github.com/zachchan105/hasher-meowpow.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

@@ -1,6 +1,6 @@
 'use strict'
 
-const kawpow = require('bindings')('hasherkawpow.node');
+const meowpow = require('bindings')('hashermeowpow.node');
 
 module.exports = {
 
@@ -45,7 +45,7 @@ function hashOne(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf) {
     _expectBuffer(mixOutBuf, 'mixOutBuf', 32);
     _expectBuffer(hashOutBuf, 'hashOutBuf', 32);
 
-    kawpow.hash_one(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf);
+    meowpow.hash_one(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf);
 }
 
 
@@ -57,7 +57,7 @@ function verify(headerHashBuf, nonceBuf, blockHeight, mixHashBuf, hashOutBuf) {
     _expectBuffer(mixHashBuf, 'mixOutBuf', 32);
     _expectBuffer(hashOutBuf, 'hashOutBuf', 32);
 
-    return kawpow.verify(headerHashBuf, nonceBuf, blockHeight, mixHashBuf, hashOutBuf);
+    return meowpow.verify(headerHashBuf, nonceBuf, blockHeight, mixHashBuf, hashOutBuf);
 }
 
 

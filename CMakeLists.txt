@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(hasherkawpow)
+project(hashermeowpow)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-file(GLOB hasher_kawpow_SRC
+file(GLOB hasher_meowpow_SRC
         "src/*/*.c"
         "src/*.c"
         "src/*.cpp"
@@ -31,7 +31,7 @@ if (CMAKE_JS_VERSION)
 
     # include static libraries
 
-    add_library(${PROJECT_NAME} SHARED ${hasher_kawpow_SRC} "hasherkawpow.cc")
+    add_library(${PROJECT_NAME} SHARED ${hasher_meowpow_SRC} "hashermeowpow.cc")
     set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
 
 endif()

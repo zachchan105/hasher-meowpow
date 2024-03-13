@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "hasherkawpow",
+            "target_name": "hashermeowpow",
             "sources": [
                 "src/ethash/ethash.cpp",
                 "src/ethash/primes.c",
@@ -11,7 +11,7 @@
                 "src/keccak/keccakf1600.c",
                 "src/uint256.cpp",
                 "src/utilstrencodings.cpp",
-                "hasherkawpow.cc"
+                "hashermeowpow.cc"
             ],
             "include_dirs": [
                 ".",

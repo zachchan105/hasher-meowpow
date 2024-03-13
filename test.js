@@ -1,6 +1,6 @@
 'use strict'
 
-const kawpow = require('./index.js');
+const meowpow = require('./index.js');
 
 process.title = 'verify-test';
 
@@ -25,7 +25,7 @@ function hash(headerHashBuf, nonceBuf, blockHeight) {
     const mixOutBuf = Buffer.alloc(32, 0);
     const hashOutBuf = Buffer.alloc(32, 0);
 
-    kawpow.hashOne(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf);
+    meowpow.hashOne(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf);
 
     const mixHash = mixOutBuf.toString('hex');
     const hash = hashOutBuf.toString('hex');
@@ -56,7 +56,7 @@ function verify(mixHashBuf, expectedHash, iterations) {
     const startTimeMs = Date.now();
 
     for (let i = 0; i < iterations; i++) {
-        const isValid = kawpow.verify(headerHashBuf, nonceBuf, blockHeight, mixHashBuf, verifyHashOutBuf);
+        const isValid = meowpow.verify(headerHashBuf, nonceBuf, blockHeight, mixHashBuf, verifyHashOutBuf);
         if (!isValid)
             throw new Error('Verification failed.');
     }
